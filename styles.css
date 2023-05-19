@@ -141,7 +141,7 @@ main {
 }
 
 .main-exchange-container p {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
@@ -159,11 +159,13 @@ main {
 
 .main-currency-table .currency-table--title {
     margin-bottom: 30px;
+    margin-top: 30px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--bitcoin-orange);
+    color: var(--bitcoin-orange);   
 }
+
 
 .currency-table--container {
     width: 90%;
@@ -233,8 +235,11 @@ main {
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--soft-orange);
     border-radius: 8px;
+}
+
+.one {
+    background-color: var(--soft-orange);
 }
 
 .currency-table--date p {
@@ -242,4 +247,46 @@ main {
     font-weight: 300;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+
+.main-commit-container {
+    margin-top: 24px;
+}
+
+.currency-grid--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    background-color: var(--just-white);
+    border-radius: 18px;
+}
+
+.main-currency-table .currency-table--title-2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--secondary-blue);
+}
+
+.currency-grid--container p {
+    align-self: center;
+}
+
+.currency-grid--container .table-left {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+}
+
+.two {
+    background-color: var(--soft-blue);
 }
