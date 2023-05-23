@@ -450,10 +450,11 @@ main {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    padding: 5px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 20px 10px;
+    margin: 50px 10px 10px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -491,7 +492,7 @@ main {
 .plan-card-price span {
     position: absolute;
     top: -10px;
-    left: 70px;
+    left: 50px;
     font-size: 1.2rem;
     font-weight: 300;
 }
