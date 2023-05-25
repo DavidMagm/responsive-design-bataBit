@@ -148,12 +148,21 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    margin-top: 45px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table {
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 45px 20px;
     font-family: "Inter", sans-serif;
 }
 
@@ -185,7 +194,7 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: var(--grey);
+    color: var(--black);
     background-color: var(--just-white);
 }
 
@@ -284,7 +293,7 @@ main {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: var(--grey);
+    color: var(--black);
 }
 
 .two {
@@ -391,7 +400,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('./assets/imgs/bitcoinbabyx2.jpg');
+    background-image: url('./assets/imgs/bitcoinbabyx1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -533,6 +542,7 @@ footer {
 footer section {
     display: flex;
     width: 50%;
+    height: auto;
     justify-content: center;
     align-items: center;
 }
@@ -551,4 +561,9 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+
+.footer .right {
+    width: 45px;
+    height: 28px;
 }
